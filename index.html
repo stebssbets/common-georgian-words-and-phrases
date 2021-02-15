@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="styles.css" />
+        <title>Title</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Which letters do you want to practice?
+                <p>
+                    
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "გამარჯობაcheckbox" value = "გამარჯობა">
+                        <label for = "გამარჯობა">გამარჯობა (hello)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "დილა მშვიდობისაcheckbox" value = "დილა მშვიდობისა">
+                        <label for = "დილა მშვიდობისა">დილს მშვიდობისა (good morning)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "საღემო მშვიდობისაcheckbox" value = "საღამო მშვიდობისა">
+                        <label for = "საღგემო მშვიდობისა">საღგემო მშვიდობისა (good evening)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "ღამე მშვიდობისაcheckbox" value = "ღამე მშვიდობისა">
+                        <label for = "ღამე მშვიდობისა">ღამე მშვიდობისა (good night)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "ნახვამდისcheckbox" value = "ნახვამდის">
+                        <label for = "ნახვამდის">ნახვამდის (good bye)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "დიახcheckbox" value = "დიახ">
+                        <label for = "დიახ">დიახ (formal yes)</label>
+
+                        <input type = "checkbox" class = 'lettersToPracticeCheckbox' id = "კიcheckbox" value = "კი">
+                        <label for = "კი">კი (regular yes)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "ჰოcheckbox" value = "ჰო">
+                        <label for = "ჰო">ჰო (informal yes)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "არაcheckbox" value = "არა">
+                        <label for = "არა">არა (no)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "კარგიcheckbox" value = "კარგი">
+                        <label for = "კარგი">კარგი (ok)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "არმომწონსcheckbox" value = "არმომწონს">
+                        <label for = "არმომწონს">არ მომწონს (don't like)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "ბოთიშიcheckbox" value = "ბოთიში">
+                        <label for = "ბოთიში">ბოთიში (sorry)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "გთხოვcheckbox" value = "გთხოვ">
+                        <label for = "გთხოვ">გთხოვ (please)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "დრებითcheckbox" value = "დროებით">
+                        <label for = "დროებით">დროებით (see you soon)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "თუშეიძლებაcheckbox" value = "თუშეიძლება">
+                        <label for = "თუშეიძლება">თუშეიძლება (if possible)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "კარგადcheckbox" value = "კარგად">
+                        <label for = "კარგად">კარგად (bye)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "მათლობაcheckbox" value = "მათლობა">
+                        <label for = "მათლობა">კარგად (thank you)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "მეკარგადვარcheckbox" value = "მეკარგადვარ">
+                        <label for = "მეკარგადვარ">მეკარგადვარ (I am fine)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "მომწონსcheckbox" value = "მომწონს">
+                        <label for = "მომწონს">მომწონს (to like)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "ნახვამდისcheckbox" value = "ნახვამდის">
+                        <label for = "ნახვამდის">ნახვამდის (bye)</label>
+
+                        <input type = "checkbox" class = 'wordsToPracticeCheckbox' id = "უკაცრავადcheckbox" value = "უკაცრავად">
+                        <label for = "უკაცრავად">უკაცრავად (excuse me)</label>
+                </p>
+            </h1>
+
+            <br>
+            <br>
+                    <button type="button" class="playButton" id = "playButton" value = "playButton" onclick = 'handlePlayButtonClick()'>
+                    <label for = "playButton">Play</button>
+            <br>
+            <br>
+
+            <h1>What do you hear?
+                
+                <p>
+                    <button type="button" class="submitButton" id = "გამარჯობაbutton" value = "გამარჯობა">
+                        
+                    <label for = "გამარჯობა">გამარჯობა</button>
+
+                    <button type="button" class="submitButton" id = "დილა მშვიდობისაbutton" value = "დილა მშვიდობისა">
+                    <label for = "დილა მშვიდობისა">დილა მშვიდობისა</button>
+
+                    <button type="button" class="submitButton" id = "საღამო მშვიდობისაbutton" value = "საღამო მშვიდობისა">
+                    <label for = "საღამო მშვიდობისა">საღამო მშვიდობისა</button>
+
+                    <button type="button" class="submitButton" id = "ღამე მშვიდობისაbutton" value = "ღამე მშვიდობისა">
+                    <label for = "ღამე მშვიდობისა">ღამე მშვიდობისა</button>
+
+                    <button type="button" class="submitButton" id = "ნახვამდის" value = "ნახვამდის">
+                    <label for = "ნახვამდის">ნახვამდის</button>
+
+                    <button type="button" class="submitButton" id = "დიახbutton" value = "დიახ">
+                    <label for = "დიახ">დიახ</button>
+
+                    <button type="button" class="submitButton" id = "კიbutton" value = "კი">
+                    <label for = "კი">კი</button>
+
+                    <button type="button" class="submitButton" id = "ჰოbutton" value = "ჰო">
+                    <label for = "ჰო">ჰო</button>
+
+                    <button type="button" class="submitButton" id = "არაbutton" value = "არა">
+                    <label for = "არა">არა</button>
+
+                    <button type="button" class="submitButton" id = "იbutton" value = "ი">
+                    <label for = "ი">ი</button>
+
+                    <button type="button" class="submitButton" id = "კარგიbutton" value = "კარგი">
+                    <label for = "კარგი">კარგი</button>
+
+                    <button type="button" class="submitButton" id = "არმომწონსbutton" value = "არმომწონს">
+                    <label for = "არმომწონს">არ მომწონს</button>
+
+                    <button type="button" class="submitButton" id = "ბოთიშიbutton" value = "ბოთიში">
+                    <label for = "ბოთიში">ბოთიში</button>
+
+                    <button type="button" class="submitButton" id = "გთხოვbutton" value = "გთხოვ">
+                    <label for = "გთხოვ">გთხოვ</button>
+
+                    <button type="button" class="submitButton" id = "დროებითbutton" value = "დროებით">
+                    <label for = "დროებით">დროებით</button>
+
+                    <button type="button" class="submitButton" id = "თუშეიმლებაbutton" value = "თუშეიმლება">
+                    <label for = "თუშეიმლება">თუ შეიმლება</button>
+
+                    <button type="button" class="submitButton" id = "კარგადbutton" value = "კარგად">
+                    <label for = "კარგად">კარგად</button>
+
+                    <button type="button" class="submitButton" id = "მადლობაbutton" value = "მადლობა">
+                    <label for = "მადლობა">მადლობა</button>
+
+                    <button type="button" class="submitButton" id = "მეკარგადვარbutton" value = "მეკარგადვარ">
+                    <label for = "მეკარგადვარ">მე კარგად ვარ</button>
+
+                    <button type="button" class="submitButton" id = "მომწონსbutton" value = "მომწონს">
+                    <label for = "მომწონს">მომწონს</button>
+
+                    <button type="button" class="submitButton" id = "ნახვამდისbutton" value = "ნახვამდის">
+                    <label for = "ნახვამდის">ნახვამდის</button>
+
+                    <button type="button" class="submitButton" id = "უკაცრავადbutton" value = "უკაცრავად">
+                    <label for = "უკაცრავად">უკაცრავად</button>
+
+                </div>
+            </h1>
+        </header>
+
+        <script src="javascript/main.js"></script>
+        <script src='javascript/audio.js'></script>
+    </body>
+</html>
